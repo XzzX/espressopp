@@ -40,7 +40,9 @@
 #pragma GCC diagnostic ignored "-Wdeprecated-declarations"
 #pragma GCC diagnostic ignored "-Wplacement-new"
 #endif
+#define BOOST_BIND_GLOBAL_PLACEHOLDERS
 #include <boost/python.hpp>
+#undef BOOST_BIND_GLOBAL_PLACEHOLDERS
 #if (defined STRICT_GNUC) && GCC_VERSION > 50000
 #pragma GCC diagnostic pop
 #endif
